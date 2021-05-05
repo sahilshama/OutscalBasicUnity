@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MoveToNextScene : MonoBehaviour
+public class MoveToNewScene : MonoBehaviour
 {
     public Button button;
-    public string newScene;
+    public string scene1;
 
 
     private void Start()
@@ -17,7 +17,7 @@ public class MoveToNextScene : MonoBehaviour
 
     private void onButtonclick()
     {
-        Debug.Log("Hello");
-        SceneManager.LoadScene(newScene);
+
+        SceneManager.LoadScene(scene1);
     }
 }
